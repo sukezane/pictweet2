@@ -8,7 +8,13 @@ def new
 end
 
 def create
-  Tweet.create(name: params[:name], image: params[:image], text: params[:text])
+  Tweet.create(tweet_params)
+end
+
+ptrivate
+def twweet_params
+  params.permit(:name, :image, :text)
+  
 end
 
 end
