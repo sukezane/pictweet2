@@ -12,7 +12,7 @@ def create
 end
 
 private
-def twweet_params
+def tweet_params
   params.permit(:name, :image, :text)
   
 end
