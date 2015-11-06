@@ -11,7 +11,7 @@ def create
   Tweet.create(tweet_params)
 end
 
-ptrivate
+private
 def twweet_params
   params.permit(:name, :image, :text)
   
